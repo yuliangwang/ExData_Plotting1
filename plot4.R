@@ -11,7 +11,7 @@ png(file="plot4.png",width=480,height=480)
 #Divide figure into 4 parts,fill in plots column wise
 par(mfcol=c(2,2))
 #same as plot2
-with(electric_power,plot(date_time,Global_active_power,type="l",xlab="",ylab="Global Active Power (kilowatts)"))
+with(electric_power,plot(date_time,Global_active_power,type="l",xlab="",ylab="Global Active Power"))
 #same as plot3
 with(electric_power,{plot(date_time,Sub_metering_1,type="l",xlab="",ylab="Energy sub metering",col="black")
                      lines(date_time,Sub_metering_2,col="red")
