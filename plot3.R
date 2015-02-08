@@ -9,7 +9,7 @@ electric_power<-subset(electric_power,date_time>=strptime("2007-02-01 0:0:0",for
 png(file="plot3.png",width=480,height=480)
 #set type="l" to make the line plot
 #Make plot for sub_metering_1, then add other sub_meterings and legend
-with(electric_power,{plot(date_time,Sub_metering_1,type="l",xlab="",ylab="Energy sub metering (kilowatts)",col="black")
+with(electric_power,{plot(date_time,Sub_metering_1,type="l",xlab="",ylab="Energy sub metering",col="black")
                      lines(date_time,Sub_metering_2,col="red")
                      lines(date_time,Sub_metering_3,col="blue")
                      legend("topright",lty=1,legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col=c("black","red","blue"))})
