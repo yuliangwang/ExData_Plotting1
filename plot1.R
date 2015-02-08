@@ -8,5 +8,5 @@ electric_power<-subset(electric_power,Date>=strptime("2007-02-01",format="%Y-%m-
 #Set up plotting
 png(file="plot1.png",width=480,height=480)
 #Make histogram
-with(electric_power,hist(Global_active_power,xlab="Global Active Power (kilowatts)",ylab="Frequency",col="red"))
+with(electric_power,hist(Global_active_power,xlab="Global Active Power (kilowatts)",ylab="Frequency",col="red",main="Global Active Power"))
 dev.off()
